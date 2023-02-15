@@ -14,43 +14,57 @@ body {
     font-size: 16px;
 }
 
-
-/* Start of Global Styling*/
 h1, p {
-    margin: 1em auto;
     text-align: center;
 }
 
-/*End of Global Styling */
 form {
-    box-shadow: none;
+    padding: 10px;
+    border-radius: 6px;
     margin: 0 auto;
     max-width: 500px;
     min-width: 300px;
     width: 60vw;
-    background: rgb(60,230,235);
-    background: linear-gradient(0deg, rgba(60,230,235,0.7021183473389356) 0%, rgba(226,239,239,1) 100%);
-    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
-    box-shadow: 5px 5px 15px 5px #000000;
-    
+    background: #138376;
 }
-
-fieldset {
+label{
+    display: inline-block !important;
+    margin:  0.5rem 0;
+  }
+  
+  textarea::placeholder{
+    color: #000;
+  }
+  
+  input[type=text],input[type=email],input[type=password], select{
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    padding: 3px;
+    border: 3px solid #fff;
+  }
+  input[type=submit]{
+  background-color: #afdeb3;
+  color: #fff;
+  padding: 3px;
+  height: 35px;
+  width: 100%;
+  border-radius: 5px;
+  }
+  textarea{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    padding: 3px;
+    border: 3px solid #afb49a2c;
+  }
+  fieldset{
     border: none;
-    padding: 1rem 0;
-}
-
-fieldset:last-of-type{
+    padding: 1em;
+    border-bottom: 2px solid #0b0b6f;
+  
+  }
+  
+  fieldset:last-of-type{
     border-bottom: none;
-}
-
-label {
-    display: block;
-    margin: 0.5rem 0;
-}
-
-
-
-textarea {
-    color: black;
-}
+  }

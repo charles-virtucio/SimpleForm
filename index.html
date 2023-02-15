@@ -1,53 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIMPLE FORM</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <!-- *********************Title of the form******************** -->
+
     <h1>Registration Form</h1>
     <!-- *********************Form******************** -->
     <form action="#">
-    <!-- fieldset 1 First name, Last name, Email, Password fields-->
+        <!-- fieldset 1 First name, Last name, Email, Password fields-->
         <fieldset>
             <label for="#">Enter your First Name: <input type="text" required></label>
             <label for="#">Enter your Last Name: <input type="text" required></label>
             <label for="#">Enter your Email: <input type="email" required></label>
-            <label for="#">Enter your Password: <input type="password" required></label>
+            <label for="#">Enter your Password: <input type="password" minlength="10" pattern="[a-z0-5]{8}"
+                    required></label>
         </fieldset>
-    <!-- fieldset 2 -->
+
+        <!-- fieldset 2 -->
         <fieldset>
             <label for="#"><input type="radio" name="" id="">Personal account</label>
-            <label for="#"><input type="radio"  name="" id="">Business Partner Account</label>
+            <label for="#"><input type="radio" name="" id="">Business Partner Account</label>
             <label for="#"><input type="checkbox" required> I accept the <a href="#">terms and condition></a></label>
         </fieldset>
-    <!-- fieldset 3 -->
-    <fieldset>
-        <label>Upload a profile picture: <input type="file"></label>
-        <label form="#">input your age(years):<input type="number" min="13" max="120"></label>
-        <label>How did you hear from us?
-            <select>
-                <option value="">(select one)</option>
-                <option value="1">News</option>
-                <option value="2">Blog</option>
-                <option value="3">Forums</option>
-                <option value="4">Others</option>
-            </select>
 
-        </label>
-        <label for="#">
-            Provide a bio:
-            <textarea rows="3" col="15" name="bio" placeholder="I like to play">
-    
-    
-            </textarea>
-        </label>
-    </fieldset>
+        <!-- fieldset 3 -->
+        <fieldset>
+            <label>Upload a profile picture: <input type="file"></label>
+            <label form="#">Input your age (years): <input type="number" min="13" max="120"></label>
+            <label>How did you hear from us?
+                <select>
+                    <option value="">(select one)</option>
+                    <option value="1">FACEBOOK</option>
+                    <option value="2">TWITTER</option>
+                    <option value="3">INSTAGRAM</option>
+                    <option value="4">Others</option>
+                </select>
 
-</form>
+            </label>
+            <label for="#">Provide a bio:<textarea name="Test" id="" cols="30" rows="10" placeholder="Please Enter Bio"></textarea>
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
 
 </body>
 </html>
