@@ -1,13 +1,56 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-image: url("https://images.pexels.com/photos/261679/pexels-photo-261679.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100vh;
     margin: 0;
-    background-color: rgb(35, 253, 166);
-    color: #e2e7b7;
+    font-size: 16px;
 }
-label{
-display: inline-block;
-background-color: green;
-margin: 0.5rem 0;
 
+
+/* Start of Global Styling*/
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+/*End of Global Styling */
+form {
+    box-shadow: none;
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+    background: rgb(60,230,235);
+    background: linear-gradient(0deg, rgba(60,230,235,0.7021183473389356) 0%, rgba(226,239,239,1) 100%);
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    
+}
+
+fieldset {
+    border: none;
+    padding: 1rem 0;
+}
+
+fieldset:last-of-type{
+    border-bottom: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+
+
+textarea {
+    color: black;
 }
